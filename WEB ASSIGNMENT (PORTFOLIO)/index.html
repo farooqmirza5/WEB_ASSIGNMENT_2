@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+ <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-static">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./img/logo.png" alt="..." height="60">
+      </a>
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+    </div>
+  </nav>
+  <br>
+  
+    <div class="contentimage">
+        <div class="content">
+        <div>
+            <h1>Freelance web developer</h1>
+            <h2>Hi, I'm <span>Farooq Mirza</span></h2>
+            <p>I'm curently an undergraduate software engineering student from Bahria university whose working and interested in latest technologies and keen on learning more.</p>
+            <br>
+            <p>📧:farooqbaig12@gmail.com</p>
+            <br>
+            <a href="Mirza's Resume.pdf" button type="button"class="btn btn-dark" target="_blank">Download CV</button></a>
+        </div>
+    </div>
+    <div class="image">
+        <img src="img/IMG.jpg" class="pic"  >
+    </div>
+
+   <!-- contact section-->
+   
+   <section id="contact">
+    <div class="container mt-3 contactContent">
+        <h1 class="text-center">Contact Me</h1>
+
+        <div class="row mt-4">
+            <div class="col-lg-6">
+                <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;"><div id="gmapdisplay" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=karachi&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="googlemap-enabler" href="https://www.embed-map.com" id="authmaps-data">https://www.embed-map.com</a><style>#gmapdisplay img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}</style></div>
+            </div>
+
+            <div class="col-lg-6">
+                <!-- form fields -->
+                <form method="post" name="reg_form" onsubmit="validateform()">
+                    <div style="margin: 10px;">
+                    <div class="form-group">
+                      <label for="fullname">Full Name</label>
+                      <input type="text" class="form-control " name="fullname" placeholder="Full Name">
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email Address</label>
+                      <input type="email" class="form-control" name="email" placeholder="Email Address">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone(enter only 9 digit numbers)</label>
+                        <input type="number" class="form-control" name="ph" placeholder="Phone Number">
+                      </div>
+                      <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" class="form-control" name="subject" placeholder="Subject">
+                      </div>
+                      <div class="mb-3 mt-3">
+                        <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
+                    </div>
+                    <br>
+                      <div class="col-auto">
+                        <button type="submit" class="btn btn-dark" name="submit" value="Register">Contact Me</button>
+                      </div>
+                    </div>
+                  </form>
+            </div>
+        </div>  
+    </div>
+</section>
+    </div>
+
+    <!-- Footer-->
+
+    <footer id="footer">
+    <div class="icons">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.github.com/" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
+</div>
